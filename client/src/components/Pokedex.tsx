@@ -22,6 +22,7 @@ const navigate = useNavigate()
   return (
     <div>
       <h2>Liste des Pokémons</h2>
+      <button onClick={()=> navigate("/addpokemon")} > add pokemon</button>
       <ul className="pokemon-list">
         {pokemons.map((el: Pokemon, index) => (
           <div key={index}>
